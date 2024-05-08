@@ -3,8 +3,26 @@
     --gray: #D4DADC;
 }
 
+#loading {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 99;
+  }
+  
+  #loading-image {
+    z-index: 100;
+  }
+
 .header{
-    height: 150px;
+    height: 190px;
     width: 100%;
 }
 
@@ -12,8 +30,8 @@
     margin-top: auto;
     font-weight: bolder;
     position: absolute;
-    left: 2.5vw;
-    top: 78px;
+    left: 50px;
+    top: 83px;
     font-size: 120px;
     color: var(--main);
     /* -webkit-text-stroke-width: 3px;
@@ -25,64 +43,86 @@
     margin-top: auto;
     font-weight: bolder;
     position: absolute;
-    right: 2.5vw;
+    right: 50px;
     font-size: 45px;
     top: 30px;
 }
 
 .folium-map {
-    max-width: 95vw;
+    max-width: calc(100vw - 120px);
     min-height: 650px !important;
     max-height: 650px !important;
     margin: auto;
+    border: 10px solid black;
 }
 
 .section-header{
     background-color: var(--main);
     color: white;
-    font-size: 80px;
-    padding: 10px;
-    padding-left: 2.5vw;
+    font-size: 70px;
+    line-height: 80px;
+    position: static;
+    display: inline-block;
+    height: fit-content;
+    padding-left: 50px;
     font-weight: bolder;
-    margin-top: 2.5vw;
+    margin-top: 50px;
+    margin-bottom: -100px;
     height: 90px;
 }
-
+/* 
 .section-header span {
     position: relative;
     bottom: 7px;
-}
+} */
 
 .intro {
     background-color: var(--main);
     padding-bottom: 0.5vw;
-    margin-bottom: 2.5vw;
+    margin-bottom: 50px;
     color: white;
 }
 
 .intro .text {
-    margin-top: 2.5vw;
+    margin-top: 50px;
 }
 
 .text {
-    margin: 2.5vw;
-    margin-top: 1.5vw;
+    margin: 50px;
+    margin-top: 20px;
     font-size: 1.25em;
 }
 
-.map-title {
-    font-size: 80px;
-    color: black;
-    z-index: 1000;
-    font-weight: bolder;
-    line-height: 80px;
-    margin-left: 3.5vw;
-    position: absolute;
-    bottom: -469px;
+p a {
+    text-decoration: none;
+    color: var(--main);
 }
 
+p a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.sub {
+    font-weight: bolder;
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+.map-title {
+    background-color: white;
+    font-size: 80px;
+    color: black;
+    font-weight: bolder;
+    line-height: 80px;
+    margin-top: -10px;
+}
+
+.sources .text{
+    background-color: white;
+}
 .gray {
-    margin: 2.5vw;
+    margin: 50px;
     background-color: var(--gray);
     color: black;
 }
