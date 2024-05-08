@@ -48,6 +48,10 @@
     top: 30px;
 }
 
+.text p{
+    margin-bottom: 30px;
+}
+
 .folium-map {
     max-width: calc(100vw - 120px);
     min-height: 650px !important;
@@ -142,11 +146,23 @@ p a:hover{
     color: white;
 }
 
+.white, .white .section-header {
+    background-color: white;
+    color: black;
+    border: solid black 10px;
+}
+
+.white .section-header{
+    border: none;
+}
+
 
 @media screen and (max-width: 900px) {
     .header h1 {
-        font-size: 60px;
-        margin-top: 10px;
+        font-size: 70px;
+        top: 100px;
+        left: 45px;
+        /* margin-top: 10px; */
     }
 
     .section-header {
